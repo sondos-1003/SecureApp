@@ -6,12 +6,12 @@ on:
   pull_request:
     branches: [ "analys" ]
   schedule:
-    - cron: '0 0 * * 0'
+    - cron: '0 0 * * 0' # Every Sunday at midnight
   workflow_dispatch:
 
 jobs:
   analyze:
-    name: Analyze (CodeQL)
+    name: CodeQL Analyze
     runs-on: ubuntu-latest
     permissions:
       actions: read
@@ -27,17 +27,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '7.0.x'
+
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3
         with:
           languages: ${{ matrix.language }}
 
-      - name: Setup .NET Core
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: '7.0.x' # Match your .NET SDK
-
-      - name: Restore dependencies
+      - name: Restore .NET dependencies
         run: dotnet restore
 
       - name: Build solution
