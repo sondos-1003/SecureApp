@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ScureWebApp", "ScureWebApp", "{5FB09802-EA88-4E73-A81E-B1E8B00E08D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scans", "scans", "{5B14FD83-DC4E-43A0-9E89-6189094942EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureWebApp", "SecureWebApp.csproj", "{DC31D5DF-ADB5-4D94-950C-BE26359AA111}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC31D5DF-ADB5-4D94-950C-BE26359AA111}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC31D5DF-ADB5-4D94-950C-BE26359AA111}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC31D5DF-ADB5-4D94-950C-BE26359AA111}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC31D5DF-ADB5-4D94-950C-BE26359AA111}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DC31D5DF-ADB5-4D94-950C-BE26359AA111} = {5FB09802-EA88-4E73-A81E-B1E8B00E08D7}
+	EndGlobalSection
+EndGlobal
