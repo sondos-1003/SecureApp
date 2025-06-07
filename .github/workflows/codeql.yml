@@ -1,4 +1,4 @@
-name: "CodeQL"
+name: "CodeQL and Snyk Security Scan"
 
 on:
   push:
@@ -11,7 +11,7 @@ on:
 
 jobs:
   analyze:
-    name: CodeQL Analyze
+    name: CodeQL & Snyk Analyze
     runs-on: ubuntu-latest
     permissions:
       actions: read
@@ -45,3 +45,9 @@ jobs:
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3
+
+      - name: Run Snyk to check for vulnerabilities
+        uses: snyk/actions/dotnet@master
+        continue-on-error: true
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
