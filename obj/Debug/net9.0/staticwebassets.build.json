@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "eYVWQIkSo71rpOLpyxgnhVTL0w4a52JRHVQnLBI2FOc=",
+  "Source": "SecureWebApp",
+  "BasePath": "_content/SecureWebApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

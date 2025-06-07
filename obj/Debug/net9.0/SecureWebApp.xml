@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SecureWebApp</name>
+    </assembly>
+    <members>
+        <member name="M:MfaController.SetupMfa">
+            <summary>
+            Generates MFA setup code for the authenticated user
+            </summary>
+            <returns>Returns QR code data for MFA setup</returns>
+        </member>
+    </members>
+</doc>
