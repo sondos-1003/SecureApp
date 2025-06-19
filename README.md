@@ -1,5 +1,6 @@
 # SecureApp
-#Project Description
+
+##Project Description
 SecureApp is a lightweight ASP.NET Core web application focused on demonstrating secure login and registration mechanisms. It is designed to follow best security practices by implementing encryption, hashing, secure token handling, and threat modeling techniques.
 #Tech Stack
 Frontend: Minimal Razor Pages / ASP.NET Core Views
